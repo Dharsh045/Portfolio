@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-
-const container = ref(null)
 
 onMounted(() => {
   // Staggered Drop-in Animation
@@ -48,7 +46,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="about" class="about-me-section" ref="container">
+  <section id="about" class="about-me-section">
     <div class="header-overlay">
       <h1 class="big-text">ABOUT<br>ME</h1>
     </div>

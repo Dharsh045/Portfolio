@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue' // removed ref
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -71,8 +71,6 @@ const projects = [
   }
 ]
 
-const container = ref(null)
-
 onMounted(() => {
   const sections = gsap.utils.toArray('.project-card')
   const track = document.querySelector('.projects-track') as HTMLElement
@@ -137,7 +135,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="projects" class="projects-section" ref="container">
+  <section id="projects" class="projects-section">
     <div class="header">
       <h2 class="section-title">Projects</h2>
       <p class="section-sub">Technical innovations and system designs.</p>

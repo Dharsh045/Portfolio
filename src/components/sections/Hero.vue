@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { onMounted } from 'vue'
 import gsap from 'gsap'
-
-const sectionRef = ref<HTMLElement | null>(null)
 
 onMounted(() => {
   const tl = gsap.timeline()
@@ -33,7 +31,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="hero" class="hero-section" ref="sectionRef">
+  <section id="hero" class="hero-section">
     <div class="content-wrapper">
       
       <!-- Massive Mixed Typography Headline -->
