@@ -4,9 +4,9 @@ import vue from '@vitejs/plugin-vue'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  build: {
-    rollupOptions: {
-      external: ['the-package-name', 'another-package-or-file']
-    }
-  }
+  // build: {
+  //   rollupOptions: {
+  //     external: [] 
+  //   }
+  // }
 })

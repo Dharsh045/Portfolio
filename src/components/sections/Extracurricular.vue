@@ -1,9 +1,14 @@
 <script setup lang="ts">
+import photographyImg from '../../assets/images/extra/photography.jpeg'
+import danceImg from '../../assets/images/extra/dance.jpeg'
+import musicImg from '../../assets/images/extra/music.jpeg'
+import volunteeringImg from '../../assets/images/extra/volunteering.jpeg'
+
 const extras = [
   {
     title: 'Photography',
     size: 'wide',
-    image: '/src/assets/images/extra/photography.jpeg',
+    image: photographyImg,
     style: { backgroundPosition: 'center', backgroundSize: 'cover' },
     annotation: "Enthusiastic photographer with a keen eye for visual aesthetics.",
     arrowType: 'curved-down-right', // arrow points down-right to card
@@ -12,7 +17,7 @@ const extras = [
   {
     title: 'Dance',
     size: 'narrow',
-    image: '/src/assets/images/extra/dance.jpeg',
+    image: danceImg,
     annotation: "Awarded multiple distinctions from Annamalai University, including First Class with Distinction in Bharatanatyam.",
     arrowType: 'curved-down-left',
     pos: 'top-right'
@@ -20,7 +25,7 @@ const extras = [
   {
     title: 'Music',
     size: 'narrow',
-    image: '/src/assets/images/extra/music.jpeg',
+    image: musicImg,
     annotation: "Love it!",
     arrowType: 'curved-up-left', // Swapped from right
     pos: 'bottom-left'
@@ -28,7 +33,7 @@ const extras = [
   {
     title: 'Volunteering',
     size: 'wide',
-    image: '/src/assets/images/extra/volunteering.jpeg',
+    image: volunteeringImg,
     annotation: "Active NSS volunteer for the past 3 years, contributing to community service.",
     arrowType: 'curved-up-right', // Swapped from left
     pos: 'bottom-right'
