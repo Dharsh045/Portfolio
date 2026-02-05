@@ -1,0 +1,243 @@
+/* ========================================
+   LUXURY DARK MODE — BLACK + GOLD GRADIENT
+======================================== */
+
+html.dark-mode {
+
+    /* ===== BACKGROUND GRADIENT (MAIN FIX) ===== */
+    --bg-primary:
+        radial-gradient(circle at 20% 10%, rgba(255, 215, 0, 0.18), transparent 35%),
+        radial-gradient(circle at 80% 30%, rgba(255, 215, 0, 0.12), transparent 40%),
+        linear-gradient(180deg, #050505 0%, #0a0a0a 40%, #000000 100%);
+
+    --bg-secondary: transparent;
+    --bg-tertiary: rgba(255, 255, 255, 0.04);
+
+    /* ===== TEXT ===== */
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.75);
+    --text-tertiary: rgba(255, 255, 255, 0.55);
+    --text-muted: rgba(255, 255, 255, 0.35);
+
+    /* ===== ACCENT GOLD ===== */
+    --accent-primary: #ffd84d;
+    --accent-secondary: #ffcc00;
+
+    /* ===== GLASS CARD ===== */
+    --card-gradient: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.02));
+}
+
+
+/* ========================================
+   APPLY BACKGROUND
+======================================== */
+
+html.dark-mode,
+html.dark-mode body {
+    background: var(--bg-primary) !important;
+    background-attachment: fixed !important;
+    color: var(--text-primary);
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ========================================
+   NAVBAR (LUXURY GLASS)
+======================================== */
+
+html.dark-mode .navbar {
+    background: rgba(0, 0, 0, 0.85);
+    /* Opaque "not very thick" background */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 0.5rem 2rem;
+    /* Thinner height */
+}
+
+html.dark-mode .nav-link {
+    color: var(--text-secondary);
+}
+
+html.dark-mode .nav-link:hover {
+    color: var(--accent-primary);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+html.dark-mode .hero-name {
+    color: #ffffff;
+}
+
+html.dark-mode .hero-role {
+    color: var(--accent-primary);
+}
+
+html.dark-mode .hero-subtitle {
+    color: var(--text-secondary);
+}
+
+
+/* ========================================
+   HEADINGS
+======================================== */
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3 {
+    color: #ffffff;
+}
+
+html.dark-mode .section-title {
+    color: var(--accent-primary);
+}
+
+
+/* ========================================
+   PREMIUM GLASS CARDS
+======================================== */
+
+html.dark-mode .project-card,
+html.dark-mode .small-card,
+html.dark-mode .card-inner,
+html.dark-mode .experience-card {
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(22px);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.8),
+        inset 0 0 0.5px rgba(255, 255, 255, 0.08);
+
+    transition: all 0.35s ease;
+}
+
+html.dark-mode .project-card:hover,
+html.dark-mode .small-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 216, 77, 0.6);
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.9),
+        0 0 30px rgba(255, 216, 77, 0.18);
+}
+
+
+/* ========================================
+   LINKS
+======================================== */
+
+html.dark-mode a {
+    color: var(--accent-primary);
+}
+
+html.dark-mode a:hover {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+html.dark-mode input,
+html.dark-mode textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* ========================================
+   HERO COLOR FIX FOR DARK MODE
+======================================== */
+
+/* Dharshni (main name) */
+html.dark-mode .sans {
+    color: #ffffff !important;
+    /* pure white so visible */
+}
+
+/* prakash (italic name) */
+html.dark-mode .serif-italic {
+    color: #ffd84d !important;
+    /* gold instead of purple */
+    background: none !important;
+    /* remove light gradient text */
+    text-shadow: 0 0 25px rgba(255, 216, 77, 0.25);
+    /* soft glow */
+}
+
+/* bio text */
+html.dark-mode .bio-text {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+html.dark-mode .bio-text strong {
+    color: #ffffff;
+}
+
+/* highlight word */
+html.dark-mode .bio-highlight {
+    color: #ffd84d;
+}
+
+/* avatar circle */
+html.dark-mode .profile-avatar {
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+html.dark-mode .initials {
+    color: #ffd84d;
+}
+
+/* arrow text */
+html.dark-mode .arrow-indicator {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ========================================
+   CONTACT & PHILOSOPHY OVERRIDES
+======================================== */
+
+/* Contact: Yellow CTA & Headline */
+html.dark-mode .headline,
+html.dark-mode .cta-link {
+    color: #ffd84d !important;
+    /* Bright Yellow/Gold */
+    text-shadow: 0 0 30px rgba(255, 216, 77, 0.3);
+}
+
+html.dark-mode .arrow {
+    color: #ffd84d !important;
+}
+
+/* Philosophy: Gradient Text */
+html.dark-mode .lyric-line {
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc, #ffcc00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    opacity: 0.5;
+    /* dim state */
+}
+
+/* Active state handled by GSAP usually sets opacity:1, scale:1. Gradient stays. */
+html.dark-mode .lyric-line[style*="opacity: 1"] {
+    opacity: 1 !important;
+    text-shadow: 0 0 20px rgba(224, 195, 252, 0.4);
+}

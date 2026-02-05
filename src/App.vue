@@ -1,30 +1,87 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { onMounted } from 'vue'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+// Standard GSAP ScrollTrigger setup
+// User didn't ask to install lenis, but "smooth scroll". I'll use standard css scroll-behavior for now + gsap scrubbing.
+
+import Navbar from './components/layout/Navbar.vue'
+import Cursor from './components/ui/Cursor.vue'
+import InteractiveBackground from './components/ui/InteractiveBackground.vue'
+import Hero from './components/sections/Hero.vue'
+import AboutMe from './components/sections/AboutMe.vue'
+import Projects from './components/sections/Projects.vue'
+import Experience from './components/sections/Experience.vue'
+import Education from './components/sections/Education.vue'
+import Leadership from './components/sections/Leadership.vue'
+import Extracurricular from './components/sections/Extracurricular.vue'
+import Publications from './components/sections/Publications.vue'
+import Philosophy from './components/sections/Philosophy.vue'
+import Contact from './components/sections/Contact.vue'
+import Footer from './components/layout/Footer.vue'
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  // Global Section Reveal Animation
+  const sections = document.querySelectorAll('section')
+  
+  sections.forEach(section => {
+    gsap.fromTo(section, 
+      { 
+        y: 50, 
+        opacity: 0 
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 90%', 
+          toggleActions: 'play none none reverse'
+        }
+      }
+    )
+  })
+})
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <InteractiveBackground />
+  <Cursor />
+  <Navbar />
+  <main id="app">
+    <Hero />
+    <AboutMe />
+    <Experience />
+    <Projects />
+    <Education />
+    <Publications />
+    <Leadership />
+    <Extracurricular />
+    <Philosophy />
+    <Contact />
+  </main>
+  <Footer />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+/* Global Smooth Scroll attempt via CSS */
+html {
+  scroll-behavior: smooth;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+/* Ensure sections allow background to show through */
+#hero, #about, #projects, #experience, #leadership, #extracurricular, #publications, #contact {
+  background-color: transparent;
 }
 </style>
