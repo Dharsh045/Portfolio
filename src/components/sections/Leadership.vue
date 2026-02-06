@@ -1,4 +1,9 @@
 <script setup lang="ts">
+/**
+ * Leadership Section Component
+ *
+ * Displays leadership roles and extracurricular activities in a list format.
+ */
 const leaderships = [
   {
     title: 'Anokha 2026',
