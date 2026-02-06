@@ -1,4 +1,9 @@
 <script setup lang="ts">
+/**
+ * Experience Section Component
+ *
+ * Displays a professional timeline of work experience using GSAP animations.
+ */
 import { onMounted } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
