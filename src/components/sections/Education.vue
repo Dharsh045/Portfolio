@@ -1,4 +1,9 @@
 <script setup lang="ts">
+/**
+ * Education Section Component
+ *
+ * Displays academic background in a grid layout.
+ */
 import { onMounted } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
