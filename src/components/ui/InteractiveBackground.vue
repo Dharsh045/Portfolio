@@ -1,4 +1,9 @@
 <script setup lang="ts">
+/**
+ * Interactive Background Component
+ *
+ * Manages dynamic background blobs and noise overlay with mouse interaction.
+ */
 import { ref, onMounted, onUnmounted } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
