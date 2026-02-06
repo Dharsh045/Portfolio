@@ -1,4 +1,9 @@
 <script setup lang="ts">
+/**
+ * Section Header Component
+ *
+ * Reusable header with title, subtitle, and gradient accents.
+ */
 interface Props {
   title: string
   subtitle?: string
@@ -59,33 +64,6 @@ withDefaults(defineProps<Props>(), {
   color: var(--text-secondary);
   margin-bottom: var(--space-lg);
   line-height: var(--line-height-normal);
-}
-
-.header.pill-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-
-.variant-bold .pill-icon {
-  background: rgba(255,255,255,0.2);
-}
-
-.icon-bg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.2;
-  background: transparent;
 }
 
 .header-accent {
