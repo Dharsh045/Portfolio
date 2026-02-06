@@ -200,14 +200,6 @@ onMounted(() => {
   box-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 
-.small-card:not(.align-right)::after {
-  /* right: -6px; */ /* Timeline is at 50% of container, but card is 45% width. 
-                 Wait, if card is 45%, timeline is at 50%, so roughly -5% away. 
-                 Let's use absolute positioning relative to timeline */
-  /* right: -2rem; */ /* Matches padding */
-  /* right: calc(-2rem - 7px); */ /* Adjust visually */
-  /* Actually easier to rely on container alignment. */
-}
 
 /* Let's simplify timeline alignment */
 /* Timeline center line is at Left: 50% of .cards-timeline */
