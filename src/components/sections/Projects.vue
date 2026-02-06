@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { onMounted } from 'vue' // removed ref
+/**
+ * Projects Section Component
+ *
+ * Displays a horizontal scrolling gallery of projects.
+ */
+import { onMounted } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
