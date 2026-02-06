@@ -1,5 +1,13 @@
-# Vue 3 + TypeScript + Vite
+# Dharshni Prakash - Portfolio
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A modern, interactive portfolio website built with Vue 3, TypeScript, and Tailwind CSS. Designed to showcase my projects, experience, and skills with a clean, pastel-themed aesthetic and smooth animations.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+This project serves as a central hub for my professional identity, featuring a responsive design that works seamlessly across all devices.
+
+## ✨ Features
+
+- **Modern UI/UX**: Clean, pastel-themed design with a focus on typography and whitespace.
+- **Interactive Elements**: Smooth scrolling, hover effects, and GSAP animations for a dynamic user experience.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
+- **Dynamic Content**: Sections for Experience, Projects, Leadership, and Education.
+- **Dark/Light Mode**: (Coming soon) Toggleable theme support.
