@@ -11,3 +11,11 @@ This project serves as a central hub for my professional identity, featuring a r
 - **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
 - **Dynamic Content**: Sections for Experience, Projects, Leadership, and Education.
 - **Dark/Light Mode**: (Coming soon) Toggleable theme support.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Vue 3](https://vuejs.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [GSAP](https://greensock.com/gsap/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
